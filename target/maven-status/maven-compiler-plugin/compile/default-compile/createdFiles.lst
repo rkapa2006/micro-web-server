@@ -1,0 +1,3 @@
+org\micro\web\server\util\WebServerProperties.class
+org\micro\web\server\StaticContentHandler.class
+org\micro\web\server\WebServer.class
