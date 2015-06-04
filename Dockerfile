@@ -13,6 +13,8 @@ RUN git clone https://github.com/rkapa2006/micro-web-server.git
 #change to micro-web-server Directory
 WORKDIR micro-web-server
 
+RUN pwd
+
 #Build EmiCalculator Maven Project
 RUN mvn clean install
 
@@ -22,6 +24,8 @@ RUN mvn assembly:single
 RUN cp target/micro-web-server-1.0.tar.gz /root/
 
 RUN cd ..
+
+RUN pwd
 
 RUN rm -rf micro-web-server
 
