@@ -23,7 +23,7 @@ RUN mvn assembly:single
 
 RUN cp target/micro-web-server-1.0.tar.gz /root/
 
-RUN cd ..
+WORKDIR /root
 
 RUN pwd
 
