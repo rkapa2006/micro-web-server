@@ -36,6 +36,8 @@ RUN rm -rf micro-web-server-1.0.tar.gz
 
 WORKDIR micro-web-server
 
+RUN chmod 755 -R *
+
 #Expose the port 8080 on which micro web server is listening for requests
 EXPOSE 8080
 
